@@ -1,0 +1,52 @@
+﻿@model WebEnterprise.ViewModels.Contribution.CreateContribution
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_DetailLayout";
+}
+
+<form class="forms-sample" asp-controller="Contribution" asp-action="Post" method="post" enctype="multipart/form-data">
+    <div class="form-frame pb-5">
+        <div class="item-center mb-3">
+            <h2>Select your file:</h2>
+        </div>
+        <div class="cover-grid">
+            <div class="form-group max-input">
+                <label class="pb-1 ps-1 fs-3" asp-for="Title">Title</label>
+                <input type="text" class="form-control" asp-for="Title">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3 item-center d-flex justify-content-center align-items-center">
+                <label tabindex="0" asp-for="File" class="input-file-trigger">Select a file</label>
+                <span asp-validation-for="File" class="text-danger"></span>
+                <input type="file" class="input-file" asp-for="File" accept=".doc,.docx">
+            </div>
+            <p class="file-return form-group mt-1 mb-1"></p>
+        </div>
+        <input type="hidden" asp-for="MegazineId" value="@Model.MegazineId" />
+        <span asp-validation-for="MegazineId" class="text-danger"></span>
+        <input type="hidden" asp-for="UserId" value="@Model.UserId" />
+        <span asp-validation-for="UserId" class="text-danger"></span>
+        <div class="d-flex justify-content-center align-items-center mt-4">
+            <div class=" d-flex flex-column">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="termsCheckbox" required>
+                    <label class="form-check-label" for="termsCheckbox">I agree to the terms and conditions</label>
+                </div>
+                <div class="max-button-center">
+                    <button type="submit" class="button-9 me-5 mt-4" style="padding: 10px 20px">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</form>
+
+<script>
+    var the_return = document.querySelector(".file-return");
+    var fileInput = document.querySelector(".input-file");
+
+    fileInput.addEventListener("change", function (event) {
+        the_return.innerHTML = this.files[0].name;
+    });
+</script>

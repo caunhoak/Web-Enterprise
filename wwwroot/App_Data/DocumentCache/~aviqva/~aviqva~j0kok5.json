@@ -1,0 +1,31 @@
+{
+  "CacheSourceKey": "aviqva",
+  "CachePdfKey": "aviqva/aviqva-105wisr.pdf",
+  "CacheXpzKey": "aviqva/aviqva-j0kok5.xpz",
+  "CacheInfoKey": "aviqva/aviqva-j0kok5.json",
+  "CacheCopyKey": null,
+  "Document": "Type=Url;File=\"https://firebasestorage.googleapis.com/v0/b/webenterprise-8a158.appspot.com/o/assets%2F85b03075-be3f-4285-9810-7a03022beb02.docx?alt=media&token=ed275156-237b-4f61-b894-253baca55929\"",
+  "DocumentFileName": "85b03075-be3f-4285-9810-7a03022beb02.docx",
+  "DownloadFileName": null,
+  "InputOptions": {
+    "$type": "GleamTech.DocumentUltimate.WordProcessingInputOptions, GleamTech.DocumentUltimate",
+    "FieldFileName": "85b03075-be3f-4285-9810-7a03022beb02.docx",
+    "UpdateFields": true,
+    "Encoding": null,
+    "Format": "Docx",
+    "Password": null
+  },
+  "PdfOutputOptions": {
+    "Watermarks": [],
+    "FastWebViewEnabled": false,
+    "Password": null,
+    "Attachments": [],
+    "Format": "Pdf"
+  },
+  "XpzOutputOptions": {
+    "Password": "aviqva",
+    "HighQualityEnabled": false,
+    "Format": "Xpz"
+  },
+  "Attachments": []
+}
